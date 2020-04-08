@@ -8,4 +8,6 @@ Most of the content for this aks-workshop/ subdirectory has been copied from the
 
 ---
 
+## Application architecture
+
 ![architecture](img/02-arch.svg)
