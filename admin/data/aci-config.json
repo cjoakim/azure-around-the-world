@@ -1,0 +1,10 @@
+{
+    "targets": {
+      "0": "http://localhost:3000",
+      "11": "http://cjoakim-atw-aci-1-eastus.eastus.azurecontainer.io:80",
+      "12": "http://cjoakim-atw-aci-2-northeurope.northeurope.azurecontainer.io:80",
+      "13": "http://cjoakim-atw-aci-3-centralindia.centralindia.azurecontainer.io:80",
+      "14": "http://cjoakim-atw-aci-4-japaneast.japaneast.azurecontainer.io:80",
+      "15": "http://cjoakim-atw-aci-5-westus.westus.azurecontainer.io:80"
+    }
+  }

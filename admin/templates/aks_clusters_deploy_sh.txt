@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Generated bash script to deploy the ATW app to the n-number
+# of AKS clusters.
+# Chris Joakim, Microsoft
+#
+# Usage:
+#   $ ./aks-clusters-deploy.sh
+
+sleep_time=10
+
+{% for region_info in region_list %}
+echo "==="
+echo "Deploying to region #{{ region_info.num }}, name: {{ region_info.region }}, context: {{ region_info.context }}"
+kubectl config use-context {{ region_info.context }}
+kubectl config current-context
+kubectl apply -f {{ region_info.deploy_yaml }}
+sleep $sleep_time
+{% endfor %}

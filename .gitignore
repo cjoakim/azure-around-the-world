@@ -1,4 +1,38 @@
+
+.vscode/
+
+app-config-bak.sh
+
+.DS_Store
+**/.DS_Store
+
+.classpath
+.mvn/
+.project
+.settings/
+
+admin/*.yaml
+admin/kub/*.yaml
+
+data/output/
+logs/
 target/
+tmp/
+
+py/bin/
+py/include/
+py/lib/
+py/man/
+
+admin/bin/
+admin/include/
+admin/lib/
+admin/man/
+
+admin/logs/
+admin/tmp/
+
+
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -7,5 +41,6 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
+
+# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
+!/.mvn/wrapper/maven-wrapper.jar

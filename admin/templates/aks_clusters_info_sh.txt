@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Generated bash script to get AKS/ATW cluster info with kubectl.
+# Chris Joakim, Microsoft
+#
+# Usage:
+#   $ ./aks-clusters-info.sh > tmp/aks-clusters-info.txt
+
+sleep_time=10
+
+{% for region_info in region_list %}
+echo "==="
+echo "AKS for region #{{ region_info.num }}, name: {{ region_info.region }}, context: {{ region_info.context }}"
+kubectl config use-context {{ region_info.context }}
+kubectl config current-context
+
+echo 'nodes:'
+kubectl get nodes
+
+echo 'pods:'
+kubectl get pods
+
+echo 'service: '
+kubectl get service {{ region_info.service }}
+
+sleep $sleep_time
+{% endfor %}

@@ -1,0 +1,22 @@
+{
+    "pk": "",
+    "function": "relay",
+    "originLocation": "",
+    "originResourceName": "",
+    "originStartEpoch": -1,
+    "originFinishEpoch": -1,
+    "elapsedMs": -1,
+    "currentLocation": "",
+    "currentResourceName": "",
+    "currentRouteIndex": -1,
+    "nextUrl": "none",
+    "verbose": true,
+    "persistPolicy": "final",
+    "route": [
+        "http://localhost:80/journey/relay",
+        "http://localhost:80/journey/relay",
+        "http://localhost:80/journey/relay"
+    ],
+    "messages": [
+    ]
+}

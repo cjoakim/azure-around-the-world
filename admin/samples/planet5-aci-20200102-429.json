@@ -1,0 +1,51 @@
+{
+  "endpoint": "http://cjoakim-atw-1-eastus.eastus.azurecontainer.io:80/journey/getbypk/20200102f",
+  "resp": "<Response [200]>",
+  "resp_obj": [
+    {
+      "id": "e8592910-fd09-4272-9729-9757d146a80b",
+      "pk": "20200102f",
+      "function": "relay",
+      "originLocation": "eastus",
+      "originResourceName": "cjoakim-atw-1-eastus",
+      "originStartEpoch": 1577980149929,
+      "originFinishEpoch": 1577980150358,
+      "elapsedMs": 429,
+      "currentLocation": "eastus",
+      "currentResourceName": "cjoakim-atw-1-eastus",
+      "currentRouteIndex": 5,
+      "nextUrl": "http://cjoakim-atw-1-eastus.eastus.azurecontainer.io:80/journey/relay",
+      "verbose": false,
+      "persistPolicy": "final",
+      "route": [
+        "http://cjoakim-atw-2-northeurope.northeurope.azurecontainer.io:80/journey/relay",
+        "http://cjoakim-atw-3-centralindia.centralindia.azurecontainer.io:80/journey/relay",
+        "http://cjoakim-atw-4-japaneast.japaneast.azurecontainer.io:80/journey/relay",
+        "http://cjoakim-atw-5-westus.westus.azurecontainer.io:80/journey/relay",
+        "http://cjoakim-atw-1-eastus.eastus.azurecontainer.io:80/journey/relay"
+      ],
+      "messages": [
+        "2020-01-02T15:49:09.929Z[GMT]: ---",
+        "2020-01-02T15:49:09.929Z[GMT]: received @ eastus resource: cjoakim-atw-1-eastus routeIndex: 0 buildUser: cjoakim buildDate: Thu Jan  2 13:34:18 UTC 2020",
+        "2020-01-02T15:49:09.929Z[GMT]: journey starting -> http://cjoakim-atw-2-northeurope.northeurope.azurecontainer.io:80/journey/relay",
+        "2020-01-02T15:49:09.983Z[GMT]: ---",
+        "2020-01-02T15:49:09.983Z[GMT]: received @ northeurope resource: cjoakim-atw-2-northeurope routeIndex: 1 buildUser: cjoakim buildDate: Thu Jan  2 13:34:18 UTC 2020",
+        "2020-01-02T15:49:09.983Z[GMT]: journey continuing -> http://cjoakim-atw-3-centralindia.centralindia.azurecontainer.io:80/journey/relay",
+        "2020-01-02T15:49:10.100Z[GMT]: ---",
+        "2020-01-02T15:49:10.100Z[GMT]: received @ centralindia resource: cjoakim-atw-3-centralindia routeIndex: 2 buildUser: cjoakim buildDate: Thu Jan  2 13:34:18 UTC 2020",
+        "2020-01-02T15:49:10.100Z[GMT]: journey continuing -> http://cjoakim-atw-4-japaneast.japaneast.azurecontainer.io:80/journey/relay",
+        "2020-01-02T15:49:10.171Z[GMT]: ---",
+        "2020-01-02T15:49:10.171Z[GMT]: received @ japaneast resource: cjoakim-atw-4-japaneast routeIndex: 3 buildUser: cjoakim buildDate: Thu Jan  2 13:34:18 UTC 2020",
+        "2020-01-02T15:49:10.171Z[GMT]: journey continuing -> http://cjoakim-atw-5-westus.westus.azurecontainer.io:80/journey/relay",
+        "2020-01-02T15:49:10.233Z[GMT]: ---",
+        "2020-01-02T15:49:10.233Z[GMT]: received @ westus resource: cjoakim-atw-5-westus routeIndex: 4 buildUser: cjoakim buildDate: Thu Jan  2 13:34:18 UTC 2020",
+        "2020-01-02T15:49:10.233Z[GMT]: journey continuing -> http://cjoakim-atw-1-eastus.eastus.azurecontainer.io:80/journey/relay",
+        "2020-01-02T15:49:10.358Z[GMT]: ---",
+        "2020-01-02T15:49:10.358Z[GMT]: received @ eastus resource: cjoakim-atw-1-eastus routeIndex: 5 buildUser: cjoakim buildDate: Thu Jan  2 13:34:18 UTC 2020",
+        "2020-01-02T15:49:10.358Z[GMT]: journey finished, elapsedMs 429"
+      ],
+      "relay": true,
+      "completed": true
+    }
+  ]
+}

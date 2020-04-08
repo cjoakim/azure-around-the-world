@@ -1,0 +1,83 @@
+# Generated Kubernetes/AKS configuration file
+# Usage:
+# $ kubectl config get-contexts
+# $ kubectl config use-context {{ context }}
+# $ kubectl config current-context
+# $ kubectl apply -f {{ yaml_filename }}
+# $ kubectl get service {{ web_service_name }}
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ web_service_name }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ web_service_name }}
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5 
+  template:
+    metadata:
+      labels:
+        app: {{ web_service_name }}
+    spec:
+      nodeSelector:
+        "beta.kubernetes.io/os": linux
+      containers:
+      - name: {{ web_service_name }}
+        image: {{ ACR_CONTAINER_FULLNAME }}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        resources:
+          requests: # minimum resources required
+            cpu: 250m
+            memory: 128Mi
+          limits: # maximum resources allocated
+            cpu: 500m
+            memory: 1Gi
+        readinessProbe: # is the container ready to receive traffic?
+          httpGet:
+            port: 80
+            path: /health/ready
+          initialDelaySeconds: 60
+          timeoutSeconds: 3
+        livenessProbe: # is the container healthy?
+          httpGet:
+            port: 80
+            path: /health/alive   
+          initialDelaySeconds: 90
+          periodSeconds: 300
+          timeoutSeconds: 3
+          failureThreshold: 5
+        env:
+        - name: AZURE_RESOURCE_LOC
+          value: "{{ AZURE_RESOURCE_LOC }}"
+        - name: AZURE_RESOURCE_NAME
+          value: "{{ AZURE_RESOURCE_NAME }}"
+        - name: AZURE_RESOURCE_NUM
+          value: "{{ AZURE_RESOURCE_NUM }}"
+        - name: AZURE_COSMOSDB_URI
+          value: "{{ AZURE_COSMOSDB_URI }}"
+        - name: AZURE_COSMOSDB_KEY
+          value: "{{ AZURE_COSMOSDB_KEY }}"
+        - name: AZURE_COSMOSDB_DATABASE
+          value: "{{ AZURE_COSMOSDB_DATABASE }}"
+        - name: CONTAINER_IMAGE
+          value: "{{ ACR_CONTAINER_FULLNAME }}"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ web_service_name }}
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: {{ web_service_name }}

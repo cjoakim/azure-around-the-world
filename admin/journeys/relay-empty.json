@@ -1,0 +1,19 @@
+{
+    "pk": "",
+    "function": "relay",
+    "originLocation": "",
+    "originResourceName": "",
+    "originStartEpoch": -1,
+    "originFinishEpoch": -1,
+    "elapsedMs": -1,
+    "currentLocation": "",
+    "currentResourceName": "",
+    "currentRouteIndex": -1,
+    "nextUrl": "none",
+    "verbose": false,
+    "persistPolicy": "final",
+    "route": [
+    ],
+    "messages": [
+    ]
+}

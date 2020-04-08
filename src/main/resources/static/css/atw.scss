@@ -1,0 +1,68 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font:          100% $font-stack;
+  color:         $primary-color;
+  margin:        20px;
+  padding:       20px;
+}
+
+#appheader {
+  border:        2px solid darkgray;
+  valign:        center;
+  align:         center;
+  padding-top:   10px;
+  margin:        0px;
+  background:    #D5D3D2;
+}
+
+.apptitle {
+  font-weight:   plain;
+  font-size:     1.8em;
+}
+
+#appnav {
+  border:        1px solid darkgray;
+  margin:        0px;
+  padding:       0px;
+  align:         center;
+  valign:        center;
+}
+
+#appnav li {
+  display:        inline;
+  list-style:     none;
+  padding-left:   10px;
+  padding-right:  10px;
+  padding-top:    0px;
+  padding-bottom: 0px;
+}
+
+#appnav li a {
+  display:         inline;
+  text-decoration: none;
+}
+
+.table_headers {
+  font-weight:   bold;
+  font-size:     1.1em;  
+}
+
+.marathons_odd {
+  
+}
+
+.marathons_even {
+  background:    #E2E2E2;
+}
+
+.code_project {
+  font-weight:   bold;
+  font-size:     1.0em;  
+}
+
+.hidden {
+  display:       none;
+}
+

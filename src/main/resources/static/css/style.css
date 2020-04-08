@@ -1,0 +1,38 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: blue;
+}
+.pagetitle {
+  align: center;
+  color: #0B5CBB;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+.pagesubtitle {
+  align: center;
+  color: #0B5CBB;
+  font-size: 1.3em;
+  font-weight: plain;
+}
+.label {
+  align: left;
+  color: #0B5CBB;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.value {
+  align: center;
+  color: #0B5CBB;
+  font-size: 1.2em;
+  font-weight: plain;
+}
+.centered {
+  align: center;
+  text-align: center;
+}
+.blocktext {
+  font-family: Courier New, Courier, monospace;
+}

@@ -1,0 +1,23 @@
+{
+  "pk": "",
+  "function": "relay",
+  "originLocation": "",
+  "originResourceName": "",
+  "originStartEpoch": -1,
+  "originFinishEpoch": -1,
+  "elapsedMs": -1,
+  "currentLocation": "",
+  "currentResourceName": "",
+  "currentRouteIndex": -1,
+  "nextUrl": "none",
+  "verbose": false,
+  "persistPolicy": "final",
+  "route": [
+    "http://51.138.42.147:80/journey/relay?info=cjoakim-atw-aks-2-westeurope",
+    "http://13.71.55.252:80/journey/relay?info=cjoakim-atw-aks-3-centralindia",
+    "http://20.44.168.96:80/journey/relay?info=cjoakim-atw-aks-4-japaneast",
+    "http://13.83.71.106:80/journey/relay?info=cjoakim-atw-aks-5-westus",
+    "http://52.149.174.186:80/journey/relay?info=cjoakim-atw-aks-1-eastus"
+  ],
+  "messages": []
+}

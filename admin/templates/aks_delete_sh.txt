@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Generated bash script to delete the AKS custers with the az CLI.
+# Chris Joakim, Microsoft
+#
+# Usage:
+#   ./aks-delete.sh
+#   ./aks-delete.sh no-wait
+
+source ../app-config.sh
+
+arg_count=$#
+sleep_time=3
+wait=""
+
+if [ $arg_count -gt 0 ]
+then
+    if [ $1 == "no-wait" ] 
+    then
+        wait="--no-wait"
+    fi
+fi
+
+echo "wait flag: "$wait
+
+echo "kubectl config get-contexts before deletes"
+kubectl config get-contexts
+
+{% for region_info in region_list %}
+kubectl config delete-context {{ region_info.az_rg }}
+{% endfor %}
+
+echo "kubectl config get-contexts after deletes"
+kubectl config get-contexts
+
+{% for region_info in region_list %}
+echo "=== az group delete: {{ region_info.az_rg }} at: $(date)"
+az group delete --name {{ region_info.az_rg }} --yes $wait
+sleep $sleep_time
+{% endfor %}

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Generated bash script to create the AKS clusters in all n-regions.
+# Chris Joakim, Microsoft
+#
+# Usage:
+#   $ ./{{ outfile }}
+
+source ../app-config.sh
+
+echo "=== {{ outfile }} start: $(date)"
+
+{% for region_info in region_list %}
+./{{ region_info.create_script }}
+{% endfor %}
+
+echo "=== {{ outfile }} finish: $(date)"
+

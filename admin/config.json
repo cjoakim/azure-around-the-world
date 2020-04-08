@@ -1,0 +1,15 @@
+{
+  "docker_username": "cjoakim",
+  "pom_artifact_id": "azure-around-the-world",
+  "pom_artifact_vers": "0.0.5",
+  "container_version": "v10",
+  "region_prefix": "cjoakim-atw",
+  "region_list": [
+    "eastus",
+    "westeurope",
+    "centralindia",
+    "japaneast",
+    "westus"
+  ],
+  "region_count": 5
+}

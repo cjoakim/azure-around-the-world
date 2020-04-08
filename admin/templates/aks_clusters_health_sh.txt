@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Generated bash script to invoke the health and ready HTTP endpoints
+# of the deployed web application.
+
+source bin/activate
+
+{% for target in targets %}
+echo ""
+echo "=== Invoking {{ target[1] }}"
+python http-client.py get_health_alive http://{{ target[0] }}
+sleep 1
+python http-client.py get_health_ready http://{{ target[0] }}
+sleep 2
+{% endfor %}
+
+echo "done"
