@@ -12,10 +12,10 @@ kubectl get pods \
 echo 'kubectl get pods for ratings-api:'
 kubectl get pods \
     --namespace $AKS_NAMESPACE \
-    -l app=ratings-api 
+    -l app=ratings-web
     # -w
 
 echo 'kubectl get deployment ratings-api:'
-kubectl get deployment ratings-api --namespace $AKS_NAMESPACE
+kubectl get deployment ratings-web --namespace $AKS_NAMESPACE
 
 echo 'done'
