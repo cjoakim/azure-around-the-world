@@ -9,17 +9,21 @@
 
 # AZURE_SUBSCRIPTION_ID - this is in my bash_profile
 
-# Base environment variables:
-REGION_NAME=eastus
-RESOURCE_GROUP=aksworkshop
-SUBNET_NAME=aks-subnet
-VNET_NAME=aks-vnet
-AKS_CLUSTER_NAME=aksworkshop-cjoakim   # don't use this name!
+export REGION_NAME=eastus
+export RESOURCE_GROUP=aksworkshop
+export SUBNET_NAME=aks-subnet
+export VNET_NAME=aks-vnet
+export AKS_CLUSTER_NAME=aksworkshop-cjoakim   # don't use this name!
+export AKS_NAMESPACE=ratingsapp
 
-# Environment variables added while executing this workshop:
-SUBNET_ID="/subscriptions/61761119-d249-4507-90c6-a16517e1874c/resourceGroups/aksworkshop/providers/Microsoft.Network/virtualNetworks/aks-vnet/subnets/aks-subnet"
-VERSION="1.16.7"
-ACR_NAME=aksworkshopcjoakim
+export SUBNET_ID="/subscriptions/61761119-d249-4507-90c6-a16517e1874c/resourceGroups/aksworkshop/providers/Microsoft.Network/virtualNetworks/aks-vnet/subnets/aks-subnet"
+export VERSION="1.16.7"
+export ACR_NAME=aksworkshopcjoakim
+export MONGODB_USER="dwight"    # Dwight Merriman, inventor of MongoDB
+export MONGODB_PASS="merriman"
+export MONGODB_DBNAME="ratingsdb"
+export MONGODB_DNS="ratings-mongodb.ratingsapp.svc.cluster.local"
+export MONGOCONNECTION="mongodb://"$MONGODB_USER":"$MONGODB_PASS"@ratings-mongodb.ratingsapp.svc.cluster.local:27017/ratingsdb"
 
 
 
@@ -33,8 +37,14 @@ then
         echo "SUBNET_NAME:        "$SUBNET_NAME
         echo "VNET_NAME:          "$VNET_NAME
         echo "AKS_CLUSTER_NAME:   "$AKS_CLUSTER_NAME
+        echo "AKS_NAMESPACE:      "$AKS_NAMESPACE
         echo "SUBNET_ID:          "$SUBNET_ID
         echo "VERSION:            "$VERSION
         echo "ACR_NAME:           "$ACR_NAME
+        echo "MONGODB_USER:       "$MONGODB_USER
+        echo "MONGODB_PASS:       "$MONGODB_PASS
+        echo "MONGODB_DBNAME:     "$MONGODB_DBNAME
+        ECHO "MONGODB_DNS:        "$MONGODB_DNS
+        echo "MONGOCONNECTION:    "$MONGOCONNECTION
     fi
 fi

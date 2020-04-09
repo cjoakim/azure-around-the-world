@@ -1,0 +1,3 @@
+mongodbDatabase: ratingsdb
+mongodbPassword: merriman
+mongodbUsername: dwight

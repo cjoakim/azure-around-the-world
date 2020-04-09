@@ -8,7 +8,7 @@ kubectl get namespace
 
 echo 'kubectl create namespace'
 
-kubectl create namespace ratingsapp
+kubectl create namespace $AKS_NAMESPACE
 
 # Note: *ratingsapp* is in the docs, should be simply ratingsapp
 
