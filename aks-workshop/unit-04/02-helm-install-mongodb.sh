@@ -2,9 +2,9 @@
 
 source ../env.sh
 
-# make sure we're working with the right cluster
+# make sure we're working with the right cluster (aksworkshop-cjoakim)
 kubectl config get-contexts
-kubectl config use-context aksworkshop-cjoakim
+kubectl config use-context $AKS_CLUSTER_NAME
 kubectl config current-context
 
 echo 'kube-system pods:'
