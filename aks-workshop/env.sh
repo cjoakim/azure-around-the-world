@@ -17,6 +17,7 @@ AKS_CLUSTER_NAME=aksworkshop-cjoakim   # don't use this name!
 # Environment variables added while executing this workshop:
 SUBNET_ID="/subscriptions/61761119-d249-4507-90c6-a16517e1874c/resourceGroups/aksworkshop/providers/Microsoft.Network/virtualNetworks/aks-vnet/subnets/aks-subnet"
 VERSION="1.16.7"
+ACR_NAME=aksworkshop-cjoakim
 
 arg_count=$#
 if [ $arg_count -gt 0 ]
@@ -30,5 +31,6 @@ then
         echo "AKS_CLUSTER_NAME:   "$AKS_CLUSTER_NAME
         echo "SUBNET_ID:          "$SUBNET_ID
         echo "VERSION:            "$VERSION
+        echo "ACR_NAME:           "$ACR_NAME
     fi
 fi
