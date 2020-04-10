@@ -16,15 +16,14 @@ Two Models:
 
 ## Azure CLI
 
-- TODO
-- Test
 - https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
+- https://jmespath.org/tutorial.html
 
 ## kubectl
 
-- TODO
+- https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
 ## Kubernetes namespaces
 
-- TODO
+- https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
 
