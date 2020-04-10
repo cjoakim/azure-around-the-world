@@ -26,27 +26,30 @@ export MONGODB_DNS="ratings-mongodb.ratingsapp.svc.cluster.local"
 export MONGOCONNECTION="mongodb://"$MONGODB_USER":"$MONGODB_PASS"@ratings-mongodb.ratingsapp.svc.cluster.local:27017/ratingsdb"
 export WORKSPACE=aksworkshop-workspace-cjoakim
 export WORKSPACE_ID="/subscriptions/61761119-d249-4507-90c6-a16517e1874c/resourcegroups/aksworkshop/providers/microsoft.operationalinsights/workspaces/aksworkshop-workspace-cjoakim"
+export LOADTEST_API_ENDPOINT="https://frontend.104-45-188-200.nip.io/api/loadtest"
+# https://frontend.104-45-188-200.nip.io/#/leaderboard
 
 arg_count=$#
 if [ $arg_count -gt 0 ]
 then
     if [ $1 == "display" ] 
     then
-        echo "REGION_NAME:        "$REGION_NAME
-        echo "RESOURCE_GROUP:     "$RESOURCE_GROUP
-        echo "SUBNET_NAME:        "$SUBNET_NAME
-        echo "VNET_NAME:          "$VNET_NAME
-        echo "AKS_CLUSTER_NAME:   "$AKS_CLUSTER_NAME
-        echo "AKS_NAMESPACE:      "$AKS_NAMESPACE
-        echo "SUBNET_ID:          "$SUBNET_ID
-        echo "VERSION:            "$VERSION
-        echo "ACR_NAME:           "$ACR_NAME
-        echo "MONGODB_USER:       "$MONGODB_USER
-        echo "MONGODB_PASS:       "$MONGODB_PASS
-        echo "MONGODB_DBNAME:     "$MONGODB_DBNAME
-        ECHO "MONGODB_DNS:        "$MONGODB_DNS
-        echo "MONGOCONNECTION:    "$MONGOCONNECTION
-        echo "WORKSPACE:          "$WORKSPACE
-        echo "WORKSPACE_ID:       "$WORKSPACE_ID
+        echo "REGION_NAME:           "$REGION_NAME
+        echo "RESOURCE_GROUP:        "$RESOURCE_GROUP
+        echo "SUBNET_NAME:           "$SUBNET_NAME
+        echo "VNET_NAME:             "$VNET_NAME
+        echo "AKS_CLUSTER_NAME:      "$AKS_CLUSTER_NAME
+        echo "AKS_NAMESPACE:         "$AKS_NAMESPACE
+        echo "SUBNET_ID:             "$SUBNET_ID
+        echo "VERSION:               "$VERSION
+        echo "ACR_NAME:              "$ACR_NAME
+        echo "MONGODB_USER:          "$MONGODB_USER
+        echo "MONGODB_PASS:          "$MONGODB_PASS
+        echo "MONGODB_DBNAME:        "$MONGODB_DBNAME
+        ECHO "MONGODB_DNS:           "$MONGODB_DNS
+        echo "MONGOCONNECTION:       "$MONGOCONNECTION
+        echo "WORKSPACE:             "$WORKSPACE
+        echo "WORKSPACE_ID:          "$WORKSPACE_ID
+        echo "LOADTEST_API_ENDPOINT: "$LOADTEST_API_ENDPOINT
     fi
 fi
