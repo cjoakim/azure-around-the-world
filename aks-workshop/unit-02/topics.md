@@ -17,6 +17,8 @@ Two Models:
 ## Azure CLI
 
 - TODO
+- Test
+- https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
 
 ## kubectl
 
