@@ -16,13 +16,16 @@ Two Models:
 
 ## Azure CLI
 
-- TODO
+- https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
+- https://jmespath.org/tutorial.html
 
 ## kubectl
 
-- TODO
+- https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
 ## Kubernetes namespaces
 
-- TODO
+Logically isolate multiple workloads from different teams running in the same cluster.
+
+- https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
 
