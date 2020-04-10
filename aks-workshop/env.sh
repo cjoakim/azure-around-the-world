@@ -24,8 +24,8 @@ export MONGODB_PASS="merriman"
 export MONGODB_DBNAME="ratingsdb"
 export MONGODB_DNS="ratings-mongodb.ratingsapp.svc.cluster.local"
 export MONGOCONNECTION="mongodb://"$MONGODB_USER":"$MONGODB_PASS"@ratings-mongodb.ratingsapp.svc.cluster.local:27017/ratingsdb"
-
-
+export WORKSPACE=aksworkshop-workspace-cjoakim
+export WORKSPACE_ID="/subscriptions/61761119-d249-4507-90c6-a16517e1874c/resourcegroups/aksworkshop/providers/microsoft.operationalinsights/workspaces/aksworkshop-workspace-cjoakim"
 
 arg_count=$#
 if [ $arg_count -gt 0 ]
@@ -46,5 +46,7 @@ then
         echo "MONGODB_DBNAME:     "$MONGODB_DBNAME
         ECHO "MONGODB_DNS:        "$MONGODB_DNS
         echo "MONGOCONNECTION:    "$MONGOCONNECTION
+        echo "WORKSPACE:          "$WORKSPACE
+        echo "WORKSPACE_ID:       "$WORKSPACE_ID
     fi
 fi
