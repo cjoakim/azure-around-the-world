@@ -25,5 +25,7 @@ Two Models:
 
 ## Kubernetes namespaces
 
+Logically isolate multiple workloads from different teams running in the same cluster.
+
 - https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
 
