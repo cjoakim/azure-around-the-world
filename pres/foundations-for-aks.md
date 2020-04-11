@@ -88,6 +88,7 @@ az acr build \
 - [Azure Resource Manager (ARM)](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview)
   - Desired State Configuration
   - JSON templates and parameters - **ARM Templates**
+  - Can either be authored in an IDE, or exported from existing Azure resources/groups
   - Submit an ARM deploment with PowerShell or az CLI
   - https://github.com/cjoakim/azure-logicapp-blob-aci-dotnet/blob/master/automation/deploy-logic-app.sh
 
@@ -107,4 +108,4 @@ az group deployment create \
   --parameters @parameters.json
 ```
 
-**PowerShell** can also be used to submit the ARM template.
+**PowerShell** can also be used to submit an ARM template.
