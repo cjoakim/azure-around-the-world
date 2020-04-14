@@ -47,7 +47,11 @@
 
 ## Demonstrate the Application
 
-### POST a Journey from the Command-Line
+### HTTP POST a Journey JSON Object
+
+```
+$ ./journey.sh
+```
 
 ### [Sample POSTed Journey Object](sample_journey_spec.md)
 
