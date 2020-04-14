@@ -38,6 +38,11 @@
 - Python and the [requests](https://requests.readthedocs.io/en/master/) library is used as the HTTP client program
 - **Environment Variables** are used extensively, both at runtime and in development, per the [The Twelve-Factor App](https://12factor.net)
 
+## Room for Improvement
+
+- [Kubernetes Namespaces](https://kubernetes.io/docs/tasks/administer-cluster/namespaces-walkthrough/)
+- [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
+
 ---
 
 ## [Sample POSTed Journey Object](sample_journey_spec.md)
