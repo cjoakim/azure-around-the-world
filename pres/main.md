@@ -45,11 +45,15 @@
 
 ---
 
-## [Sample POSTed Journey Object](sample_journey_spec.md)
+## Demonstrate the Application
 
-## [Sample Completed Journey Document](sample_journey_completed.md)
+### POST a Journey from the Command-Line
 
-## Query CosmosDB
+### [Sample POSTed Journey Object](sample_journey_spec.md)
+
+### [Sample Completed Journey Document](sample_journey_completed.md)
+
+### Query CosmosDB for the completed Journeys
 
 ```
 SELECT c.pk, c.elapsedMs FROM c order by c.elapsedMs 
@@ -57,6 +61,7 @@ SELECT c.pk, c.elapsedMs FROM c order by c.elapsedMs
 SELECT * FROM c order by c.elapsedMs OFFSET 0 LIMIT 3
 ```
 
+---
 
 ## [Compile and Test Locally](compile_test.md)
 
@@ -65,3 +70,5 @@ SELECT * FROM c order by c.elapsedMs OFFSET 0 LIMIT 3
 ## [Command-Line Provisioning and Deployment](command_line_provisioning_and_deployment.md)
 
 ## [Azure DevOps Pipeline](devops_pipeline.md)
+
+## [Interact with your clusters with kubectl](kubectl.md)
