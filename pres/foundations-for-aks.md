@@ -1,5 +1,13 @@
 # Azure Foundations for Azure Kubernetes Service (AKS)
 
+## Azure DevOps - Follow-up
+
+- [DevOps](https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops)
+- [Artifacts](https://azure.microsoft.com/en-us/services/devops/artifacts/?nav=min)
+- [YAML Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema)
+
+---
+
 ## Azure Portal
 
 - Dashboard
