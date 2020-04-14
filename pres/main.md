@@ -49,6 +49,15 @@
 
 ## [Sample Completed Journey Document](sample_journey_completed.md)
 
+## Query CosmosDB
+
+```
+SELECT c.pk, c.elapsedMs FROM c order by c.elapsedMs 
+
+SELECT * FROM c order by c.elapsedMs OFFSET 0 LIMIT 3
+```
+
+
 ## [Compile and Test Locally](compile_test.md)
 
 ## [Automated File Generation With Python](python_automation.md)
