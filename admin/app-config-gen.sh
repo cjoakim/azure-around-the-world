@@ -5,7 +5,7 @@
 # Usage:
 #   $ ./app-config.sh          (silent)
 #   $ ./app-config.sh display  (verbose)
-# Chris Joakim, Microsoft, generated on: 2020-04-08 09:51:50
+# Chris Joakim, Microsoft, generated on: 2020-04-14 17:39:40
 
 # Maven
 export POM_ARTIFACT_ID="azure-around-the-world"

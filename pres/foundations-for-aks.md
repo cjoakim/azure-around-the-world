@@ -1,5 +1,13 @@
 # Azure Foundations for Azure Kubernetes Service (AKS)
 
+## Azure DevOps - Follow-up
+
+- [DevOps](https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops)
+- [Artifacts](https://azure.microsoft.com/en-us/services/devops/artifacts/?nav=min)
+- [YAML Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema)
+
+---
+
 ## Azure Portal
 
 - Dashboard
@@ -31,6 +39,7 @@ EA
 
 ## Docker and Containers
 
+- [DockerHub](https://hub.docker.com/?ref=login)
 - [Azure Container Registry (ACR)](https://azure.microsoft.com/en-us/services/container-registry/)
 - [Azure Container Instances (ACI)](https://azure.microsoft.com/en-us/services/container-instances/)
 - [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/services/kubernetes-service/)
@@ -39,11 +48,15 @@ EA
 - [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-function-linux-custom-image)
 - [Azure Logic Apps & ACI Example](https://github.com/cjoakim/azure-logicapp-blob-aci-dotnet)
 
+- [Docker Compose](https://docs.docker.com/compose/)
+- [docker-compose.yml example](https://github.com/cjoakim/azure-logicapp-blob-aci-dotnet/blob/master/blobs/docker-compose.yml)
+
 ---
 
 ## Automation - with the Command Line Interface
 
 - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest)
+- [Install](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 
 ### Get --help for any command and level of detail 
 

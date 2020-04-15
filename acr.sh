@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Bash and az CLI script to interact with Azure Container Registry.
-# Chris Joakim, 2020/04/07
+# Chris Joakim, 2020/04/13
 
 source app-config.sh
 
@@ -44,6 +44,12 @@ tag() {
 }
 
 push() {
+    # $ source ./app-config.sh ; env | grep DOCKERHUB_CONTAINER_FULLNAME
+    # DOCKERHUB_CONTAINER_FULLNAME=cjoakim/azure-around-the-world:v10
+
+    # $ source ./app-config.sh ; env | grep ACR_CONTAINER_FULLNAME
+    # ACR_CONTAINER_FULLNAME=cjoakimacr.azurecr.io/azure-around-the-world:v10
+
     echo "docker push: "$ACR_CONTAINER_FULLNAME
     docker push $ACR_CONTAINER_FULLNAME
 }
