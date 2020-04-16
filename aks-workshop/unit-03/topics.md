@@ -36,3 +36,5 @@
 ## Other tips
 
 - Delete unused resources in your subscription - especially those using MSDN Visual Studio subscription
+- Explore documentation on aks and acr
+
