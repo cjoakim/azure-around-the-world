@@ -36,5 +36,7 @@
 ## Other tips
 
 - Delete unused resources in your subscription - especially those using MSDN Visual Studio subscription
+- Modules build upon previous, script away to easily resume from previous day and not incur idling cost
 - Explore documentation on aks and acr
+
 
