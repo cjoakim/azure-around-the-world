@@ -128,6 +128,7 @@ $ kubectl apply -f kub/atw-3-centralindia.yaml
 [Services](https://kubernetes.io/docs/concepts/services-networking/service/)
 
 ```
+$ kubectl get service atw-web
 $ kubectl get service
 
 
