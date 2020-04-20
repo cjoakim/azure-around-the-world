@@ -10,7 +10,7 @@
 # AZURE_SUBSCRIPTION_ID - this is in my bash_profile
 
 export REGION_NAME=eastus
-export RESOURCE_GROUP=aksworkshop
+export RESOURCE_GROUP=aksworkshop2
 export SUBNET_NAME=aks-subnet
 export VNET_NAME=aks-vnet
 export AKS_CLUSTER_NAME=aksworkshop-cjoakim   # don't use this name!
