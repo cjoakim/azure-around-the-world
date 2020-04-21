@@ -3,31 +3,28 @@
 ## Azure Monitor
 
 - https://azure.microsoft.com/en-us/services/monitor/#features
+- https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-overview
 - https://docs.microsoft.com/bs-latn-ba/azure/azure-monitor/insights/container-insights-log-search
 
 ## Log Analytics Queries
 
+Last heartbeat of each computer:
 ```
-// Last heartbeat of each computer 
-// Show the last heartbeat sent by each computer 
 Heartbeat
 | summarize arg_max(TimeGenerated, *) by Computer
 ```
 
+List all computer heartbeats from the last hour:
 ```
-// List heartbeats 
-// List all computer heartbeats from the last hour 
 Heartbeat
 | where TimeGenerated > ago(1h)
 ```
 
+What data is being collected? 
 ```
-// What data is being collected? 
-// List the collected performance counters and object types (Process, Memory, Processor…) 
 Perf
 | summarize by ObjectName, CounterName
 ```
-
 
 ```
 ContainerInventory
