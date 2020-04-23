@@ -75,7 +75,7 @@
 [INFO] |  |     |  |  \- javax.activation:activation:jar:1.1:compile
 [INFO] |  |     |  +- com.github.stephenc.jcip:jcip-annotations:jar:1.0-1:compile
 [INFO] |  |     |  +- com.nimbusds:lang-tag:jar:1.4.4:compile (version selected from constraint [1.4.3,))
-[INFO] |  |     |  \- com.nimbusds:nimbus-jose-jwt:jar:8.14:compile (version selected from constraint [6.0.1,))
+[INFO] |  |     |  \- com.nimbusds:nimbus-jose-jwt:jar:8.15:compile (version selected from constraint [6.0.1,))
 [INFO] |  |     +- org.nanohttpd:nanohttpd:jar:2.3.1:compile
 [INFO] |  |     \- net.java.dev.jna:jna-platform:jar:4.5.2:compile
 [INFO] |  |        \- net.java.dev.jna:jna:jar:4.5.2:compile
@@ -161,6 +161,6 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.384 s
-[INFO] Finished at: 2020-04-07T13:11:23-04:00
+[INFO] Total time:  1.443 s
+[INFO] Finished at: 2020-04-23T08:38:38-04:00
 [INFO] ------------------------------------------------------------------------
