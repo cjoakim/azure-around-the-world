@@ -76,3 +76,28 @@ SELECT * FROM c order by c.elapsedMs OFFSET 0 LIMIT 3
 ## [Azure DevOps Pipeline](devops_pipeline.md)
 
 ## [Interact with your clusters with kubectl](kubectl.md)
+
+---
+
+## .Net and Containers
+
+- https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/
+- https://devblogs.microsoft.com/dotnet/introducing-net-5/
+- https://docs.microsoft.com/en-us/dotnet/architecture/microservices/net-core-net-framework-containers/net-container-os-targets
+- https://docs.microsoft.com/en-us/dotnet/architecture/microservices/net-core-net-framework-containers/net-core-container-scenarios
+- https://dotnet.microsoft.com/download/dotnet/5.0
+- https://devblogs.microsoft.com/dotnet/we-made-windows-server-core-container-images-40-smaller/
+- https://github.com/cjoakim/azure-logicapp-blob-aci-dotnet/blob/master/blobs/Dockerfile
+
+### Dockerfile for the Logic App
+
+https://github.com/cjoakim/azure-logicapp-blob-aci-dotnet
+
+```
+FROM mcr.microsoft.com/dotnet/core/runtime:3.1
+
+COPY bin/Release/netcoreapp3.1/publish/ app/
+
+ENTRYPOINT ["dotnet", "app/blobs.dll"]
+```
+
