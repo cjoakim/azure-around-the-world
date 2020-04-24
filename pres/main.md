@@ -88,6 +88,7 @@ SELECT * FROM c order by c.elapsedMs OFFSET 0 LIMIT 3
 - https://dotnet.microsoft.com/download/dotnet/5.0
 - https://devblogs.microsoft.com/dotnet/we-made-windows-server-core-container-images-40-smaller/
 - https://github.com/cjoakim/azure-logicapp-blob-aci-dotnet/blob/master/blobs/Dockerfile
+- https://www.oreilly.com/library/view/monolith-to-microservices/9781492047834/
 
 ### Dockerfile for the Logic App
 
