@@ -16,7 +16,7 @@ export VNET_NAME=aks-vnet
 export AKS_CLUSTER_NAME=aksworkshop-cjoakim   # don't use this name!
 export AKS_NAMESPACE=ratingsapp
 
-export SUBNET_ID="/subscriptions/61761119-d249-4507-90c6-a16517e1874c/resourceGroups/aksworkshop/providers/Microsoft.Network/virtualNetworks/aks-vnet/subnets/aks-subnet"
+export SUBNET_ID="/subscriptions/...subscription-id.../resourceGroups/aksworkshop/providers/Microsoft.Network/virtualNetworks/aks-vnet/subnets/aks-subnet"
 export VERSION="1.16.7"
 export ACR_NAME=aksworkshopcjoakim
 export MONGODB_USER="dwight"    # Dwight Merriman, inventor of MongoDB
@@ -25,7 +25,7 @@ export MONGODB_DBNAME="ratingsdb"
 export MONGODB_DNS="ratings-mongodb.ratingsapp.svc.cluster.local"
 export MONGOCONNECTION="mongodb://"$MONGODB_USER":"$MONGODB_PASS"@ratings-mongodb.ratingsapp.svc.cluster.local:27017/ratingsdb"
 export WORKSPACE=aksworkshop-workspace-cjoakim
-export WORKSPACE_ID="/subscriptions/61761119-d249-4507-90c6-a16517e1874c/resourcegroups/aksworkshop/providers/microsoft.operationalinsights/workspaces/aksworkshop-workspace-cjoakim"
+export WORKSPACE_ID="/subscriptions/...subscription-id.../resourcegroups/aksworkshop/providers/microsoft.operationalinsights/workspaces/aksworkshop-workspace-cjoakim"
 export LOADTEST_API_ENDPOINT="https://frontend.104-45-188-200.nip.io/api/loadtest"
 # https://frontend.104-45-188-200.nip.io/#/leaderboard
 
